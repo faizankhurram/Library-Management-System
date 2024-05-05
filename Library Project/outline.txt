@@ -1,0 +1,46 @@
+create a library to store books
+
+each book can have several attirbutes, such as:     (first draft, changes and improvements expected)
+    title
+    author (s) ; no restriction on the number of authors
+    publisher
+    price
+    copies ; this will hold the total number of copies of that book in the library 
+    isbn code ; implement proper case checking
+
+features:   (first draft, changes and improvements expected)
+    implement a method to search for a book in the library, according to its isbn or title
+    in this case, also implement a method for displaying the info for a book
+    implement a method for lending a book
+        keep track of the books lended by the user and correctly modify the copies of that book in the library
+        after lending, show modified amount of copies of that book
+        after lending, show the user all the books that they have lended
+    all other features include getters and setters
+    the setters will be used for modifying any data member for any book (object)
+
+    if the copies of a book reach zero, that book gets removed from the library
+
+main idea:      (first draft, changes and improvements expected)
+    have the user in an endless loop menu, presenting him choices to perform
+    the choices will include: 
+        add a book to the library
+        search for a book in the library
+        lend a book from the library
+        see total number of books available in the library
+        see all the current books lended by the user ; to be done in the main function
+        exit the program
+
+
+menu:
+    ------Welcome to the Library Management System------
+
+    1. Add a Book
+    2. Search by ISBN or Title 
+    3. Lend a Book 
+    4. Check Library Book Count
+    5. See all Library Books
+    6. Check Lended Book Count
+    7. See all Lended Books
+    8. Remove a Book from the Library
+    9. Remove a Book from Lended Books
+    10. Exit
